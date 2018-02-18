@@ -9,10 +9,10 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "Rajat Malhotra"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "Rajat Malhotra"
+description              : "A collection of data-oriented projects."
 url                      : "https://malhotrajat.github.io"
 baseurl                  : "/i-love-data"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -90,10 +90,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
+  name             : "Rajat Malhotra"
+  avatar           : "/assets/images/me.jpg"
+  bio              : "Business Analytics graduate student at UT Austin"
+  location         : "Austin, TX"
   email            :
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
