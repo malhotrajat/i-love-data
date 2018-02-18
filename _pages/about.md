@@ -1,6 +1,6 @@
 ---
-layout: About
-title: "About"
+layout: about
+title: "about"
 permalink: /about/
 header:
   image: "assets/images/homepage.jpg"
