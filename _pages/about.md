@@ -2,6 +2,6 @@
 title: "About"
 permalink: /about/
 header:
-  image: "/assets/images/homepage.jpg"
+  image: "/assets/images/data science homepage.jpg"
 
 ---
