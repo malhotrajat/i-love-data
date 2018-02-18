@@ -2,7 +2,7 @@
 title: "about"
 permalink: /about/
 header:
-  image: "assets/images/homepage.jpg"
+  image: "/assets/images/homepage.jpg"
 
 ---
 {{ site.data.authors.author1.about }}
