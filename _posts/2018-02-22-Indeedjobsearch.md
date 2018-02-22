@@ -68,7 +68,7 @@ def job_score(url):
 
 Let's evaluate this "Data Insights Analyst" job from Homeaway.
 
-![png](/assets/images/indeed_scraping/homeaway.PNG?raw=True)
+![jpg](/assets/images/indeed_scraping/homeaway.jpg?raw=True)
 
 
 ```python
@@ -303,7 +303,7 @@ main()
     Please check your mail.
     
 Here's a snapshot of the email you would receive:
-![png](/assets/images/indeed_scraping/indeed_scraping.PNG?raw=True)
+![jpg](/assets/images/indeed_scraping/indeed_scraping.jpg?raw=True)
     
 
 # **Ending Remarks**
