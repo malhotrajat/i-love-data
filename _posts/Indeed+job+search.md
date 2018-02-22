@@ -301,7 +301,7 @@ main()
     Please check your mail.
     
 Here's a snapshot of the email you would receive:
-![png](/i-love-data/assets/images/indeed_scraping/indeed_scraping.png)
+![png](i-love-data/assets/images/indeed_scraping/indeed_scraping.png)
     
 
 # **Ending Remarks**
