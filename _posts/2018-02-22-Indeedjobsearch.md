@@ -68,6 +68,8 @@ def job_score(url):
 
 Let's evaluate this "Data Insights Analyst" job from Homeaway.
 
+![png](/assets/images/indeed_scraping/homeaway.PNG?raw=True)
+
 
 ```python
 job_score('https://www.indeed.com/viewjob?jk=29d57706cae9885e&tk=1c6l78ddmafhgf15&from=serp&vjs=3')
