@@ -1,4 +1,5 @@
 ---
+layout: compress
 title:  "Scraping Indeed.com for jobs"
 date:   2018-02-22
 tags: [scraping]
