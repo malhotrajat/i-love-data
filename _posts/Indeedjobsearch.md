@@ -4,7 +4,7 @@ date:   2018-02-21
 tags: [scraping]
 
 header:
-  image: "i-love-data/assets/images/indeed_scraping/indeed.jpg"
+  image: "assets/images/indeed_scraping/indeed.jpg"
  
 excerpt: "Indeed.com, scraping, job descriptions"
 ---
@@ -301,7 +301,7 @@ main()
     Please check your mail.
     
 Here's a snapshot of the email you would receive:
-![png](i-love-data/assets/images/indeed_scraping/indeed_scraping.png)
+![png](assets/images/indeed_scraping/indeed_scraping.png)
     
 
 # **Ending Remarks**
