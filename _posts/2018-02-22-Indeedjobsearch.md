@@ -300,7 +300,7 @@ main()
     Please check your mail.
     
 Here's a snapshot of the email you would receive:
-![no-alignment]({{ site.url }}{{ site.baseurl }}/assets/images/indeed_scraping/indeedemail.jpg)
+![no-alignment]({{ site.url }}{{ site.baseurl }}/assets/images/indeed_scraping/indeedemail.JPG)
     
 
 # **Ending Remarks**
