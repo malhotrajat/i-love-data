@@ -3,7 +3,7 @@ layout: archive
 title: "Resume"
 permalink: /resume/
 header:
-  image: "/assets/images/resumeheader1.jpg"
+  image: "/assets/images/resumeheader2.jpg"
 
 ---
 
