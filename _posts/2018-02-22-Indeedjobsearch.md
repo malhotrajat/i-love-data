@@ -1,5 +1,7 @@
 ---
 title:  "Scraping Indeed.com for jobs"
+categories:
+  - Markup
 date:   2018-02-22
 tags: [scraping]
 
@@ -68,8 +70,7 @@ def job_score(url):
 
 Let's evaluate this "Data Insights Analyst" job from Homeaway.
 
-![jpg](/assets/images/indeed_scraping/homeaway.jpg)
-
+![no-alignment]({{ site.url }}{{ site.baseurl }}/assets/images//indeed_scraping/homeaway.jpg)
 
 ```python
 job_score('https://www.indeed.com/viewjob?jk=29d57706cae9885e&tk=1c6l78ddmafhgf15&from=serp&vjs=3')
