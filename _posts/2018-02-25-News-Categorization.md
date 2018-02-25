@@ -1,4 +1,15 @@
+---
+title:  "News Categorization using Multinomial Naive Bayes and Logistic Regression"
+categories:
+  - Markup
+date:   2018-02-25
+tags: [Classification]
 
+header:
+  image: "assets/images/newscategorization/newsheader.jpg"
+ 
+excerpt: "Headlines, Classification, Naive Bayes, Logistic Regression"
+---
 # **News Categorization using Multinomial Naive Bayes and Logistic Regression**
 
 The dataset was taken from : https://www.kaggle.com/uciml/news-aggregator-dataset
