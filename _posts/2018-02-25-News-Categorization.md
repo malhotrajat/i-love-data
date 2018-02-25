@@ -252,7 +252,7 @@ data["CATEGORY"].value_counts().plot(kind='pie', labels=names, autopct='%1.0f%%'
 
 
 
-![png](output_11_1.png)
+![png](assets/images/newscategorization/output_11_1.png)
 
 
 # Preparing the data to be fed into the model
@@ -294,7 +294,7 @@ y_train.value_counts().plot(kind='pie', labels=names, autopct='%1.0f%%', subplot
 
 
 
-![png](output_16_1.png)
+![png](assets/images/newscategorization/output_16_1.png)
 
 
 We see that the training set has the same distribution as the original data and that's what we wanted.
