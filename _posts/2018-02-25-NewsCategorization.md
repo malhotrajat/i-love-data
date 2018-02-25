@@ -10,8 +10,7 @@ header:
  
 excerpt: "Headlines, Classification, Naive Bayes, Logistic Regression"
 ---
-# **News Categorization using Multinomial Naive Bayes and Logistic Regression**
-
+# Source 
 The dataset was taken from : https://www.kaggle.com/uciml/news-aggregator-dataset
 
 This dataset contains headlines, URLs, and categories for 422,937 news stories collected by a web aggregator between March 10th, 2014 and August 10th, 2014.
