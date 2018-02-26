@@ -6,7 +6,7 @@ date:   2018-02-26
 tags: [Recommendation Systems]
 
 header:
-  image: "assets/images/matrixfactorization/movierecommendationheader.jpg"
+  image: "assets/images/matrixfactorization/movierecommendationheader.jpeg"
  
 excerpt: "Matrix Factorization, Recommender Systems, SVD, PCA"
 ---
@@ -32,6 +32,7 @@ The problem we need to assess is that of rating prediction. The data we would ha
 
 It would look something like this:
 
+![no-alignment]({{ site.url }}{{ site.baseurl }}/assets/images/indeed_scraping/homeaway.jpg)
 ![no-alignment]({{ site.url }}{{ site.baseurl }}/assets/images/matrixfactorization/Rmatrix.JPG)
 
 Our **R matrix** is a 99% sparse matrix withthe columns as the items or movies in our case and the rows as individual users.
