@@ -10,6 +10,7 @@ header:
  
 excerpt: "Matrix Factorization, Recommender Systems, SVD, PCA"
 ---
+
 # **What are we doing?**
 
 We are building a basic version of a low-rank matrix factorization recommendation system and we will use it on a dataset obtained from https://grouplens.org/datasets/movielens/. It has 20 million ratings and 465,000 tag applications applied to 27,000 movies by 138,000 users. 
