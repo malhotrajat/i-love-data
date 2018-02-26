@@ -21,8 +21,7 @@ The problem we need to assess is that of rating prediction. The data we would ha
 
 It would look something like this:
 
-
-insert R matrix
+![no-alignment]({{ site.url }}{{ site.baseurl }}/assets/images/matrixfactorization/Rmatrix.JPG)
 
 Our **R matrix** is a 99% sparse matrix withthe columns as the items or movies in our case and the rows as individual users.
 
