@@ -238,7 +238,7 @@ So what can SVD do for us? SVD is PCA on R and R(Transpose), in one shot.
 
 SVD will give you the two matrices U and M, at the same time. You get the typical users and the typical movies in one shot. SVD gives you U and M by factorizing R into three matrices. Here is the matrix factorization:
 
-**R=MΣU<sup>T</sup>**
+***R=MΣU<sup>T</sup>***
 
 To be very clear: SVD is an algorithm that takes the matrix R as an input, and it gives you M, Σ and U, such that:
 
@@ -260,7 +260,7 @@ When we compute and use the SVD of the rating matrix R, we are actually modeling
 
 For the sake of simplicity, we will forget about the matrix Σ: it is a diagonal matrix, so it simply acts as a scaler on M or U(Transpose). Hence, we will pretend that we have merged into one of the two matrices. Our matrix factorization simply becomes:
 
-R=MU<sup>T</sup>
+***R=MU<sup>T</sup>***
 
 Now, with this factorization, let’s consider the rating of user u for item i, that we will denote rui:
 
@@ -268,7 +268,7 @@ Now, with this factorization, let’s consider the rating of user u for item i, 
 
 Because of the way a matrix product is defined, the value of rui is the result of a dot product between two vectors: a vector pu which is a row of M and which is specific to the user u, and a vector qi which is a column of UT and which is specific to the item i:
 
-ru<sub>i</sub>=p<sub>u</sub>⋅q<sub>i</sub>,
+***ru<sub>i</sub>=p<sub>u</sub>⋅q<sub>i</sub>***,
 
 where '⋅' stands for the usual dot product. Now, remember how we can describe our users and our items?
 
