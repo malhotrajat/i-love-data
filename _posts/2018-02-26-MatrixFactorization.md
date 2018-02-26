@@ -102,7 +102,7 @@ for i in range(10):
 
 **Each image size is 64 x 64 pixels. We will flatten each of these images (we thus get 400 vectors, each with 64 x 64 = 4096 elements). We can represent our dataset in a 400 x 4096 matrix:**
 
-insert flattened
+![no-alignment]({{ site.url }}{{ site.baseurl }}/assets/images/matrixfactorization/Flattened.JPG)
 
 **PCA, which stands for Principal Component Analysis, is an algorithm that will reveal 400 of these guys:**
 
@@ -177,7 +177,18 @@ As far as we’re concerned, we will call these guys the **creepy guys**.
 
 Now, one amazing thing about them is that they can build back all of the original faces. Take a look at this (these are animated gifs, about 10s long):
 
-Insert gifs
+![no-alignment]({{ site.url }}{{ site.baseurl }}/assets/images/matrixfactorization/anim.gif)
+![no-alignment]({{ site.url }}{{ site.baseurl }}/assets/images/matrixfactorization/anim2.gif)
+![no-alignment]({{ site.url }}{{ site.baseurl }}/assets/images/matrixfactorization/anim3.gif)
+![no-alignment]({{ site.url }}{{ site.baseurl }}/assets/images/matrixfactorization/anim4.gif)
+![no-alignment]({{ site.url }}{{ site.baseurl }}/assets/images/matrixfactorization/anim5.gif)
+![no-alignment]({{ site.url }}{{ site.baseurl }}/assets/images/matrixfactorization/anim6.gif)
+![no-alignment]({{ site.url }}{{ site.baseurl }}/assets/images/matrixfactorization/anim7.gif)
+![no-alignment]({{ site.url }}{{ site.baseurl }}/assets/images/matrixfactorization/anim8.gif)
+![no-alignment]({{ site.url }}{{ site.baseurl }}/assets/images/matrixfactorization/anim9.gif)
+![no-alignment]({{ site.url }}{{ site.baseurl }}/assets/images/matrixfactorization/anim10.gif)
+
+
 
 Each of the 400 original faces (i.e. each of the 400 original rows of the matrix) can be expressed as a (linear) combination of the creepy guys. That is, we can express the first original face (i.e. its pixel values) as a little bit of the first creepy guy, plus a little bit of the second creepy guy, plus a little bit of third, etc. until the last creepy guy. The same goes for all of the other original faces: they can all be expressed as a little bit of each creepy guy.
 
@@ -199,7 +210,7 @@ Until stated otherwise, we will consider for now that our rating matrix R is com
 
 Here is our rating matrix, where rows are users and columns are movies:
 
-Insert userPCA
+![no-alignment]({{ site.url }}{{ site.baseurl }}/assets/images/matrixfactorization/UserPCA.JPG)
 
 Instead of having faces in the rows represented by pixel values, we now have users represented by their ratings. Just like PCA gave us some typical guys before, it will now give us some typical users, or rather some typical raters.
 
@@ -217,7 +228,7 @@ And the same goes for all of the users, you get the idea. (In practice the coeff
 
 What would happen if we transposed our rating matrix? Instead of having users in the rows, we would now have movies, defined as their ratings:
 
-insert moviesPCA
+![no-alignment]({{ site.url }}{{ site.baseurl }}/assets/images/matrixfactorization/MoviesPCA.JPG)
 
 In this case, PCA will not reveal typical faces nor typical users, but of course typical movies. And here again, we will associate a semantic meaning behind each of the typical movies, and these typical movies can build back all of our original movies:
 
@@ -253,7 +264,7 @@ R=MU(Transpose)
 
 Now, with this factorization, let’s consider the rating of user u for item i, that we will denote rui:
 
-Insert productmatrices
+![no-alignment]({{ site.url }}{{ site.baseurl }}/assets/images/matrixfactorization/productmatrices.JPG)
 
 Because of the way a matrix product is defined, the value of rui is the result of a dot product between two vectors: a vector pu which is a row of M and which is specific to the user u, and a vector qi which is a column of UT and which is specific to the item i:
 
@@ -283,7 +294,7 @@ The vector pu represents the affinity of user u for each of the latent factors. 
 
 So, when we are using the SVD of R, we are modeling the rating of user u for item i as follows:
 
-insert equation
+![no-alignment]({{ site.url }}{{ site.baseurl }}/assets/images/matrixfactorization/equation.JPG)
 
 n other words, if u has a taste for factors that are endorsed by i, then the rating rui will be high. Conversely, if i is not the kind of items that u likes (i.e. the coefficient don’t match well), the rating rui will be low. In our case, the rating of Alice for Titanic will be high, while that of Bob will be much lower because he’s not so keen on romance movies. His rating for Toy Story will, however, be higher than that of Alice.
 
