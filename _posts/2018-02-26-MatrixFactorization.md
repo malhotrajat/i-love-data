@@ -296,7 +296,7 @@ So, when we are using the SVD of R, we are modeling the rating of user u for ite
 
 ![no-alignment]({{ site.url }}{{ site.baseurl }}/assets/images/matrixfactorization/equation.JPG)
 
-n other words, if u has a taste for factors that are endorsed by i, then the rating rui will be high. Conversely, if i is not the kind of items that u likes (i.e. the coefficient don’t match well), the rating rui will be low. In our case, the rating of Alice for Titanic will be high, while that of Bob will be much lower because he’s not so keen on romance movies. His rating for Toy Story will, however, be higher than that of Alice.
+In other words, if u has a taste for factors that are endorsed by i, then the rating rui will be high. Conversely, if i is not the kind of items that u likes (i.e. the coefficient don’t match well), the rating rui will be low. In our case, the rating of Alice for Titanic will be high, while that of Bob will be much lower because he’s not so keen on romance movies. His rating for Toy Story will, however, be higher than that of Alice.
 
 We now have enough knowledge to apply SVD to a recommendation task.
 
