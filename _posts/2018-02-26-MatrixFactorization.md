@@ -192,7 +192,7 @@ Now, one amazing thing about them is that they can build back all of the origina
 
 Each of the 400 original faces (i.e. each of the 400 original rows of the matrix) can be expressed as a (linear) combination of the creepy guys. That is, we can express the first original face (i.e. its pixel values) as a little bit of the first creepy guy, plus a little bit of the second creepy guy, plus a little bit of third, etc. until the last creepy guy. The same goes for all of the other original faces: they can all be expressed as a little bit of each creepy guy.
 
-**Face 1 = α1⋅Creepy guy #1 + α2⋅Creepy guy #2 . . . + α400⋅Creepy guy #400**
+**Face 1 = α<sup>1</sup>⋅Creepy guy #1 + α<sup>2</sup>⋅Creepy guy #2 . . . + α<sup>400</sup>⋅Creepy guy #400**
 
 The gifs you saw above are the very translation of these math equations: the first frame of a gif is the contribution of the first creepy guy, the second frame is the contribution of the first two creepy guys, etc. until the last creepy guy.
 
@@ -238,11 +238,11 @@ So what can SVD do for us? SVD is PCA on R and R(Transpose), in one shot.
 
 SVD will give you the two matrices U and M, at the same time. You get the typical users and the typical movies in one shot. SVD gives you U and M by factorizing R into three matrices. Here is the matrix factorization:
 
-**R=MΣU(Transpose)**
+                                                        **R=MΣU<sup>T</sup>**
 
 To be very clear: SVD is an algorithm that takes the matrix R as an input, and it gives you M, Σ and U, such that:
 
-R is equal to the product **MΣU(Transpose).**
+R is equal to the product **MΣU<sup>T</sup>.**
 
 The columns of M can build back all of the columns of R (we already know this).
 
@@ -260,7 +260,7 @@ When we compute and use the SVD of the rating matrix R, we are actually modeling
 
 For the sake of simplicity, we will forget about the matrix Σ: it is a diagonal matrix, so it simply acts as a scaler on M or U(Transpose). Hence, we will pretend that we have merged into one of the two matrices. Our matrix factorization simply becomes:
 
-R=MU(Transpose)
+                                                        R=MU<sup>T</sup>
 
 Now, with this factorization, let’s consider the rating of user u for item i, that we will denote rui:
 
@@ -268,7 +268,7 @@ Now, with this factorization, let’s consider the rating of user u for item i, 
 
 Because of the way a matrix product is defined, the value of rui is the result of a dot product between two vectors: a vector pu which is a row of M and which is specific to the user u, and a vector qi which is a column of UT and which is specific to the item i:
 
-rui=pu⋅qi,
+                                       ru<sub>i</sub>=p<sub>u</sub>⋅q<sub>i</sub>,
 
 where '⋅' stands for the usual dot product. Now, remember how we can describe our users and our items?
 
@@ -280,7 +280,7 @@ where '⋅' stands for the usual dot product. Now, remember how we can describe 
 
 **Toy Story = 30% Action + 60% Comedy + 0% Romance + ...**
 
-Well, the values of the vectors pu and qi exactly correspond to the coefficients that we have assigned to each latent factor:
+Well, the values of the vectors p<sub>u</sub> and q<sub>i</sub> exactly correspond to the coefficients that we have assigned to each latent factor:
 
 **pAlice=(10%,  10%,  50%, ...)**
 
@@ -290,7 +290,7 @@ Well, the values of the vectors pu and qi exactly correspond to the coefficients
 
 **qToy Story=(30%,  60%,  0%, ...)**
 
-The vector pu represents the affinity of user u for each of the latent factors. Similarly, the vector qi represents the affinity of the item i for the latent factors. Alice is represented as (10%,10%,50%,...), meaning that she’s only slightly sensitive to action and comedy movies, but she seems to like romance. As for Bob, he seems to prefer action movies above anything else. We can also see that Titanic is mostly a romance movie and that it’s not funny at all.
+The vector p<sub>u</sub> represents the affinity of user u for each of the latent factors. Similarly, the vector q<sub>i</sub> represents the affinity of the item i for the latent factors. Alice is represented as (10%, 10%, 50%,...), meaning that she’s only slightly sensitive to action and comedy movies, but she seems to like romance. As for Bob, he seems to prefer action movies above anything else. We can also see that Titanic is mostly a romance movie and that it’s not funny at all.
 
 So, when we are using the SVD of R, we are modeling the rating of user u for item i as follows:
 
