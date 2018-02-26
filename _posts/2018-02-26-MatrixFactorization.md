@@ -268,7 +268,7 @@ Now, with this factorization, let’s consider the rating of user u for item i, 
 
 Because of the way a matrix product is defined, the value of rui is the result of a dot product between two vectors: a vector pu which is a row of M and which is specific to the user u, and a vector qi which is a column of UT and which is specific to the item i:
 
-***ru<sub>i</sub>=p<sub>u</sub>⋅q<sub>i</sub>***,
+***ru<sub>i</sub>=p<sub>u</sub>⋅q<sub>i</sub>***
 
 where '⋅' stands for the usual dot product. Now, remember how we can describe our users and our items?
 
@@ -282,13 +282,13 @@ where '⋅' stands for the usual dot product. Now, remember how we can describe 
 
 Well, the values of the vectors p<sub>u</sub> and q<sub>i</sub> exactly correspond to the coefficients that we have assigned to each latent factor:
 
-**pAlice=(10%,  10%,  50%, ...)**
+**p<sub>Alice</sub>=(10%,  10%,  50%, ...)**
 
-**pBob=(50%,  30%,  10%, ...)**
+**p<sub>Bob</sub>=(50%,  30%,  10%, ...)**
 
-**qTitanic=(20%,  0%,  70%, ...)**
+**q<sub>Titanic</sub>=(20%,  0%,  70%, ...)**
 
-**qToy Story=(30%,  60%,  0%, ...)**
+**q<sub>Toy Story</sub>=(30%,  60%,  0%, ...)**
 
 The vector p<sub>u</sub> represents the affinity of user u for each of the latent factors. Similarly, the vector q<sub>i</sub> represents the affinity of the item i for the latent factors. Alice is represented as (10%, 10%, 50%,...), meaning that she’s only slightly sensitive to action and comedy movies, but she seems to like romance. As for Bob, he seems to prefer action movies above anything else. We can also see that Titanic is mostly a romance movie and that it’s not funny at all.
 
