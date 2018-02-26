@@ -85,7 +85,7 @@ for i in range(10):
 ```
 
 
-![png](output_11_0.png)
+![no-alignment]({{ site.url }}{{ site.baseurl }}/assets/images/matrixfactorization/output_11_0.png)
 
 
 **Each image size is 64 x 64 pixels. We will flatten each of these images (we thus get 400 vectors, each with 64 x 64 = 4096 elements). We can represent our dataset in a 400 x 4096 matrix:**
@@ -122,8 +122,7 @@ for i in range(10):
     ax.axis('off')
 ```
 
-
-![png](output_15_0.png)
+![no-alignment]({{ site.url }}{{ site.baseurl }}/assets/images/matrixfactorization/output_15_0.png)
 
 
 **This is pretty creepy, right?**
