@@ -192,7 +192,7 @@ Now, one amazing thing about them is that they can build back all of the origina
 
 Each of the 400 original faces (i.e. each of the 400 original rows of the matrix) can be expressed as a (linear) combination of the creepy guys. That is, we can express the first original face (i.e. its pixel values) as a little bit of the first creepy guy, plus a little bit of the second creepy guy, plus a little bit of third, etc. until the last creepy guy. The same goes for all of the other original faces: they can all be expressed as a little bit of each creepy guy.
 
-**Face 1 = α<sup>1</sup>⋅Creepy guy #1 + α<sup>2</sup>⋅Creepy guy #2 . . . + α<sup>400</sup>⋅Creepy guy #400**
+**Face 1 = α<sub>1</sub>⋅Creepy guy #1 + α<sub>2</sub>⋅Creepy guy #2 . . . + α<sub>400</sub>⋅Creepy guy #400**
 
 The gifs you saw above are the very translation of these math equations: the first frame of a gif is the contribution of the first creepy guy, the second frame is the contribution of the first two creepy guys, etc. until the last creepy guy.
 
