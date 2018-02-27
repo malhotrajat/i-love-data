@@ -6,7 +6,7 @@ date:   2018-02-22
 tags: [scraping]
 
 header:
-  image: "assets/images/indeed_scraping/indeed.jpg"
+  image: "assets/images/indeed_scraping/indeedheader.jpg"
  
 excerpt: "Indeed.com, scraping, job descriptions"
 ---
