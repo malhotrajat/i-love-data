@@ -8,4 +8,4 @@ header:
 ---
 
 
-![no-alignment]({{ site.url }}{{ site.baseurl }}/assets/images/RAJAT MALHOTRA RESUME.jpg)
+![no-alignment]({{ site.url }}{{ site.baseurl }}/assets/images/RAJAT MALHOTRA RESUME2.jpg)
